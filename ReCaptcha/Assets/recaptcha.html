@@ -1,6 +1,24 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width" />
+    <style type="text/css">
+      body > div {
+        position: static !important;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    
+      body div > div {
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+      }
+    
+      :root {
+         color-scheme: light dark;
+      }
+    }
+    </style>
     <script type="text/javascript">
       const post = function(value) {
         window.webkit.messageHandlers.recaptcha.postMessage(value);
